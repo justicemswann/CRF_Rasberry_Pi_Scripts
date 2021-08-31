@@ -61,7 +61,7 @@ Humidity = driver.execute_script(
 driver.quit()
 
 
-"""
+
 date = str(datetime.date(datetime.now()))  # Gives current date
 
 t = time.localtime()
@@ -84,10 +84,10 @@ file.write(bytes(header, encoding="ascii", errors='ignore'))
 file.write(bytes(stored_information, encoding="ascii", errors='ignore'))
 file.close()
 
-"""
 
 
-"""
+
+
 >>>sql code
 
 mydb = mysql.connector.connect(
@@ -139,4 +139,3 @@ for row in range(0, 4):
                             if_exists='append')  # inserts the new data into the mysql database
 
 exec(open('5. CSV to JSON Converter.py').read())
-"""
